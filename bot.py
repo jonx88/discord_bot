@@ -1,5 +1,7 @@
 import os
 from discord.ext import commands
+from datetime import datetime
+import time
 
 def main():
 
@@ -10,12 +12,13 @@ def main():
 
     @client.event
     async def on_ready():
-        print(f"{client.user.name} is onnected to Discord")
+        print(f"{client.user.name} is connected to Discord")
 
     @client.event
     async def on_message(ctx):
         if(ctx.content.startswith("hello")):
-            await ctx.channel.send("Hi")
+            current_time = datetime.now.strftime("%H:%M:%S")          
+            await ctx.channel.send("hi -" + + current_time)
             
     client.run(TOKEN_JON)
 
