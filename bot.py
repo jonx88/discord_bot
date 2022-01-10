@@ -3,7 +3,7 @@ from discord.ext import commands
 
 def main():
 
-    TOKEN_JON = "ODcwMDU5NTM4NDk2MjI5NDE3.YQHQFg.99-Z31piEWQu8hLId2egjCVeblU"
+    TOKEN_JON = "ODcwMDU5NTM4NDk2MjI5NDE3.YQHQFg." + "lzmsM9PMEVM7kY4bHCdOUNCkeq8"
 
     token = os.getenv("DISCORD_TOKEN")
     client = commands.Bot(command_prefix="?")
