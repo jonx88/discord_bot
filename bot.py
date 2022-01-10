@@ -16,9 +16,8 @@ def main():
 
     @client.event
     async def on_message(ctx):
-        if(ctx.content.startswith("hello")):
-            current_time = datetime.now.strftime("%H:%M:%S")          
-            await ctx.channel.send("hi -" + + current_time)
+        if(ctx.content.startswith("hello")):            
+            await ctx.channel.send("hi -" )
             
     client.run(TOKEN_JON)
 
